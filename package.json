@@ -1,0 +1,16 @@
+{
+  "name": "calib-new",
+  "version": "1.0.0",
+  "main": "mail.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rumela",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.6.2"
+  },
+  "devDependencies": {},
+  "description": ""
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Entry-form</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" >
+        <link href="https://fonts.googleapis.com/css2?family=Lateef&family=Raleway&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+
+
+
+          <div class="container">
+      
+      
+              <div class="content">
+             <div class="title">Enter/Update equipment details:</div>
+              <div class="form">
+                <div class="user-details">
+                  <div class="input-box">
+                    <div class="input-details">
+                      <label>Buisness unit</label><br>
+                      <input id="business_unit" type="text" required><br>
+                    </div>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Plant</label><br>
+                    <input id="plant" type="text"><br>   
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Due-date</label><br>
+                    <input id="due_date" type="date"><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Range</label><br>
+                    <input id="range" type="text"><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Desired accuracy</label><br>
+                    <input id="des_accuracy" type="text"><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Equipment number:</label><br>
+                    <input id="equip_no" type="text" required><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Calibration Frequency</label><br>
+                    <input id="calib_freq" type="text"><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Intimation days</label><br>
+                    <input id="intim_days" type="text" placeholder="10 days" value="10 DAYS" readonly><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Section</label><br>
+                    <input id="section" type="text"><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Place of use</label><br>
+                    <input id="place" type="text"><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Equipment Description</label><br>
+                    <input id="equip_desc" type="text"><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Last Calibration date</label><br>
+                    <input id="last_calib" type="date"><br>
+                  </div>
+          
+                  <div class="input-box">
+                    <label>Equipment status</label><br>
+                    <input id="status" type="text"><br> 
+                  </div>
+          
+                  <div class="input-box"> 
+                    <label>Remarks</label><br>
+                    <input id="remarks" type="text"><br> 
+                  </div>
+
+                  <div class="input-box">
+                    <label>Calibration status</label><br>
+                    <select class="select-box" id="calib_stat">
+                      <option value="Pending">Pending</option>
+                      <option value="Calibrated">Calibrated</option>
+                    </select>
+                  </div>
+                     <div id="outer">
+                      <button class="btn" id="enter">Enter</button>
+                      <button class="btn" id="select">Select</button>
+                      <button class="btn" id="update">Update</button>
+                      <button class="btn" id="delete">Delete</button>
+                      </div>
+              </div>
+            </div>
+        </div>
+        <br />  
+
+        <footer>
+          <p>Enter your <b><em>equipment number</em></b> in the directed input 
+            box and tap the <b><em class="selectem">SELECT </em></b>button which will retrive all your equipment
+             details in their specific boxes. </p><br>
+          <p>Now, make the required changes in your equipment data in the directed input boxes and tap on 
+           <b><em class="updatem">UPDATE</em></b> to edit and update your equipment data.</p><br>
+          <p>To remove any equipment data which is no longer required, 
+            enter it's <b><em>equipment number</em></b> in the directed input 
+            box and tap the <b><em class="deletem">DELETE</em></b> button and your record will be deleted.</p> 
+        </footer> <br><br>
+
+        <a href="display.html">
+          <button type="button" class="btn-last">Go to the display page</button>
+        </a> 
+
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+
+        <script src="index.js" ></script>
+    </body>
+</html>

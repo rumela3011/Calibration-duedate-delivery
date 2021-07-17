@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Display table</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="display.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lateef&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="head1">Master-data of all equipments:</h1>
+
+    <div class="container">
+      <label for="">Search/filter</label><br /><br />
+      <input
+        class="input-box"
+        type="text"
+        id="myInput"
+        placeholder="Enter the serial number here"
+        onkeyup="searchFun()"
+      />
+      <br /><br />
+
+      Pending<input
+        type="checkbox"
+        class="check"
+        onclick="searchPending()"
+        id="pendingcheck"
+      />
+
+      Calibrated<input
+        type="checkbox"
+        class="check"
+        id="calibcheck"
+        onclick="searchCalibrated()"
+      />
+      <table id="myTable">
+        <thead>
+          <th>Serial no.</th>
+          <th>Business unit</th>
+          <th>Plant</th>
+          <th>Due-date</th>
+          <th>Range</th>
+          <th>Accuracy</th>
+          <th>Equipment number</th>
+          <th>Frequency</th>
+          <th>Intimidation days</th>
+          <th>Section</th>
+          <th>Place of use</th>
+          <th>Description</th>
+          <th>Last calibration</th>
+          <th>Equipment Status</th>
+          <th>Remarks</th>
+          <th>Calibration status</th>
+        </thead>
+        <tbody id="tbody1"></tbody>
+      </table>
+
+      <a href="index.html">
+        <button class="back-but">Back</button>
+      </a>
+      <p>
+        Once status is checked, please refer back to the index page and update
+        the calibration status.
+      </p>
+
+      <!--<a href="pending.html">
+    <button class="pend-but">See pending calibrations</button>
+  </a>-->
+
+      <div class="loader"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-database.js"></script>
+
+    <script src="display.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
