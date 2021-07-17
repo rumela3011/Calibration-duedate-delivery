@@ -12,3 +12,5 @@ According to whichever checkbox is selected, it will display the directed equipm
 <img width="955" alt="4" src="https://user-images.githubusercontent.com/68289449/126049787-cf504194-6607-4508-b0a3-4525d82a5880.png">
 
 A mail will be generated every 10 days reminding the user to check their equipment status.
+<img width="791" alt="5" src="https://user-images.githubusercontent.com/68289449/126050004-c49ccc46-59d2-4d34-85de-bc02323940bf.png">
+
